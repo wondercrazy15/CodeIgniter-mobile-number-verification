@@ -13,7 +13,7 @@ class Phonenumber extends Controller{
         $countrylist = $response->getBody();
 
         $country['name'] = json_decode($countrylist,true);
-        // echo "4444 <pre>"; print_r($country['name']);
+        // echo "4444 <pre>"; print_r($country['name']) bhavin;
         echo view('userform_view',$country);
     }
 
